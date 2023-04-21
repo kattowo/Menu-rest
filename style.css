@@ -1,0 +1,242 @@
+
+ body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .container-menu{     
+    width: 80%;
+     margin: auto;
+ }
+.area-title h2{
+    text-align: center;
+}
+.menus-area {
+    position: relative;
+}
+
+.menus-area.section-padding {
+    padding-bottom: 60px;
+}
+.menu-tabs{
+    display: none;
+    animation: disolver .9s;
+}
+.active_menu_tab{
+    display: block;    
+}
+@keyframes disolver {
+    0% {
+        margin-top: -2rem;
+       opacity:0;
+    }     
+    100% {
+        opacity:1;
+    }
+  }
+
+
+.food-menu-list-menu {
+    margin-bottom: 60px;
+	
+	align-items: center;
+	justify-content: center;
+    
+}
+
+.food-menu-list-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+
+    
+}
+
+.food-menu-list-menu ul li {
+    border: 1px solid;
+    color: #1e1e1f;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 8px 2px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+   
+}
+
+.food-menu-list-menu button {
+    border: 1px solid;
+    color: #1e1e1f;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 8px 2px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+	background-color: #fff;
+   
+}
+
+.food-menu-list-menu button:hover,
+.food-menu-list-menu button.active {
+    background: #02684e none repeat scroll 0 0;
+    border-color: #02684e;
+    color: #fff;
+}
+.food-menu-list-menu ul li:hover,
+.food-menu-list-menu ul li.active {
+    background: #02684e none repeat scroll 0 0;
+    border-color: #02684e;
+    color: #fff;
+}
+
+.single-menu .single-menu-details {
+    
+    min-height: 50px;  
+    margin: 1rem ;
+    padding: 1rem;    
+    border-bottom: 2px solid #E4E4E4;
+    transition: ease 0.5;
+    
+}
+
+.food-menu-img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top:0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 0 10px #ddd;
+    box-shadow: 0 0 0 10px #ddd;
+}
+
+.food-menu-details {
+    color: #1e1e1f;
+    padding: 0;
+    text-align: inherit;
+    
+}
+
+.food-menu-details h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+/*
+.food-menu-details p span {
+    display: inline-block;
+    width: 48%;
+}*/
+.titulomenu{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 0px;    
+
+}
+.subtitulomenu{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: #02684e;
+    text-decoration: underline;
+}
+.subtitulomenu2 h3{
+    text-align: center;
+    color: #1e1e1f;
+    margin-top: -3.5rem;
+    margin-left: 5rem;
+
+}
+.food-menu-details h3 span {
+    color: #02684e;
+  /*   float: right; */
+}
+
+.menu-speacification {
+    margin-bottom: 0;
+   line-height: 1rem;
+   font-size: 1rem;
+   text-align: left;
+   font-weight: normal;
+   width: 100%;
+   display:flex; 
+   flex-direction:column;
+   justify-content: space-evenly;
+   align-items: start;
+   gap: 0.5rem;
+
+   
+}
+.menu-speacification2{    
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.menu-speacification span {	
+	font-weight: bold;	
+	display:grid;    
+	grid-template-columns: 1fr auto;
+	justify-content: space-between;
+    align-items: start;
+	width: 80%;
+    gap: 20px ;  
+}
+.mix {
+    transition: ease 0.3s;  
+}
+.container-Lunch{
+    
+    color: #1e1e1f;
+}
+.container-dinner{
+    
+    color: #1e1e1f;
+  
+}
+.container-brunch{
+    
+    color: #1e1e1f;
+}
+
+.notaMenu{
+    color: #777777;
+    padding: 0 3rem;
+    margin-top: 3rem;
+    font-size: 0.75rem;
+    font-style: oblique;
+}
+@media (max-width: 767px){
+
+    .container-menu{     
+        width: 98%;
+        margin: auto;
+    }
+    .menu-speacification {
+       align-items: flex-start;
+       
+    }
+    #dinner{
+        columns:1;
+    }
+    .menu-speacification span {	
+        
+        width: 100%;
+        
+    }
+
+}
